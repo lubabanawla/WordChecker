@@ -10,7 +10,15 @@ public class WordChecker {
      * Postcondition: wordList is unchanged.
      */
     public boolean isWordChain() {
-        /* to be implemented in part (a) */ }
+        for(int i = 1; i < wordList.size(); i++)
+        {
+            if(wordList.get(i).indexOf(
+                    wordList.get(i - 1)) == -1)
+                return false;
+        }
+            return true;
+        } /** use .contain() here?? */
+
 
     /**
      * Returns an ArrayList<String> based on strings from wordList that start
