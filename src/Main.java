@@ -5,13 +5,23 @@ public class Main {
 
         WordChecker wordChecker = new WordChecker();
 
-        wordChecker.wordList.add("to");
-        wordChecker.wordList.add("too");
-        wordChecker.wordList.add("stool");
-        wordChecker.wordList.add("tools");
+        wordChecker.wordList.add("an");
+        wordChecker.wordList.add("band");
+        wordChecker.wordList.add("band");
+        wordChecker.wordList.add("abandon");
 
         boolean isWordChain = wordChecker.isWordChain();
         System.out.println(isWordChain); /** return value */
+
+        WordChecker wordCheckerTwo = new WordChecker();
+
+        wordCheckerTwo.wordList.add("to");
+        wordCheckerTwo.wordList.add("too");
+        wordCheckerTwo.wordList.add("stool");
+        wordCheckerTwo.wordList.add("tools");
+
+        boolean isWordChainTwo = wordCheckerTwo.isWordChain();
+        System.out.println(isWordChainTwo); /** return value */
 
     }
 }
