@@ -1,6 +1,12 @@
+import java.util.ArrayList;
+
 public class WordChecker {
     /** Initialized in the constructor and contains no null elements */
-    private ArrayList<String> wordList;
+    public ArrayList<String> wordList;
+
+    public WordChecker() {
+        wordList = new ArrayList<>(); // Create a new ArrayList instance
+    }
 
     /**
      * Returns true if each element of wordList (except the first) contains the
@@ -10,14 +16,13 @@ public class WordChecker {
      * Postcondition: wordList is unchanged.
      */
     public boolean isWordChain() {
-        for(int i = 1; i < wordList.size(); i++)
-        {
-            if(wordList.get(i).indexOf(
-                    wordList.get(i - 1)) == -1)
+        for (int i = 1; i < wordList.size(); i++) {
+            if (!wordList.get(i).contains(wordList.get(i - 1))) {
                 return false;
+            }
         }
-            return true;
-        } /** use .contain() here?? */
+        return true;
+    } /** use .contain() here?? */
 
 
     /**
@@ -29,6 +34,8 @@ public class WordChecker {
      * Items appear in the returned list in the same order as they appear in
      * wordList.
      */
-    public ArrayList<String> createList(String target) {
-        /* to be implemented in part (b) */ }
+
+    /** public ArrayList<String> createList(String target)  {
+     } */
 }
+
