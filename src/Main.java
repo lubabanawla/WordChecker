@@ -23,5 +23,14 @@ public class Main {
         boolean isWordChainTwo = wordCheckerTwo.isWordChain();
         System.out.println(isWordChainTwo); /** return value */
 
+        WordChecker wordCheckerThree = new WordChecker();
+        wordCheckerThree.wordList.add("catch");
+        wordCheckerThree.wordList.add("bobcat");
+        wordCheckerThree.wordList.add("catchacat");
+        wordCheckerThree.wordList.add("cat");
+        wordCheckerThree.wordList.add("at");
+
+        ArrayList<String> resultList = wordCheckerThree.createList("cat");
+        System.out.println(resultList);
     }
 }

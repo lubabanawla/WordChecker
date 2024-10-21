@@ -35,7 +35,16 @@ public class WordChecker {
      * wordList.
      */
 
-    /** public ArrayList<String> createList(String target)  {
-     } */
+    public ArrayList<String> createList(String target)  {
+        ArrayList<String> result = new ArrayList<>();
+
+        for (String word : wordList) {
+            if (word.startsWith(target)) {
+                result.add(word.substring(target.length()));
+            }
+        }
+
+        return result;
+    }
 }
 
