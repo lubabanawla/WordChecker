@@ -32,5 +32,11 @@ public class Main {
 
         ArrayList<String> resultList = wordCheckerThree.createList("cat");
         System.out.println(resultList);
+
+        ArrayList<String> resultListTwo = wordCheckerThree.createList("catch");
+        System.out.println(resultListTwo);
+
+        ArrayList<String> resultListThree = wordCheckerThree.createList("dog");
+        System.out.println(resultListThree);
     }
 }
